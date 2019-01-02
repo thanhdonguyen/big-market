@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	Layout
+------------------------------------------------------------*/
+body {
+	line-height: 1.5;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+}
+
+.l-container {
+	margin: 0 auto;
+	width: 1210px;
+	text-align: left;
+	@include tablet {
+		width: 94%;
+	}
+}
+
+.l-flex-container {
+	display: flex;
+}

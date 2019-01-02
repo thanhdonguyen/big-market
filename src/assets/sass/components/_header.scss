@@ -1,0 +1,94 @@
+/*------------------------------------------------------------
+	c-header
+------------------------------------------------------------*/
+
+.header-top {
+	display: flex;
+	// background-color: red;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	&__logo {
+		width: 23%;
+		padding: 33px 0;
+	}
+
+	&__nav {
+		width: 57%;
+		display: flex;
+		justify-content: flex-end;
+		line-height: 1.8;
+		font-size: 14px;
+		a{
+			color: $color1;
+			text-decoration: none;
+			font-weight: bold;
+			display: block;
+			padding: 45px 17px;
+		}
+		.nav-sub {
+			position: absolute;
+			text-align: left;
+		    border-width: 2px 0 0 0;
+		    border-style: solid;
+		    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		    border-color: #7aaedd;
+		    background: #ffffff;
+		    padding-bottom: 20px;
+		    &:before {
+		    	position: absolute;
+			    font-family: 'Font Awesome 5 Free';
+			    content: "\f0d8";
+			    font-weight: 900;
+			    font-size: 18px;
+			    line-height: 7px;
+			    height: 7px;
+			    right: 85%;
+			    margin-right: -5px;
+			    bottom: 100%;
+			    z-index: 3;
+			    color: #7aaedd;
+			    background: transparent !important;
+		    }
+			a {
+			    // position: absolute;
+			    left: -10px !important;
+			    top: 100% !important;
+			    margin: 0;
+			    padding: 20px 30px;
+			    width: 230px !important;
+			}
+		}
+	}
+
+	&__cart {
+		width: 16%;
+		font-size: 14px;
+		text-align: right;
+		padding: 35px 0;
+		padding-left: 4%;
+		.mini-cart {
+			border: 1px solid $color2;
+			color: $color1;
+			display: flex;
+			width: 120px;
+			text-decoration: none;
+		}
+		.cart-icon {
+			background-color: $color2;
+			color: #fff;
+			width: 42px;
+			text-align: center;
+			padding: 12px 0;
+		}
+		.cart-info{
+			padding: 12px 0;
+			width: 78px;
+			text-align: center;
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+
+}

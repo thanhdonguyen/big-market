@@ -1,0 +1,18 @@
+@charset "UTF-8";
+$use-html5: true;
+
+$support-ie6: false;
+$support-ie7: false;
+$support-ie8: false;
+$support-ie9: false;
+$support-mozilla: true;
+$support-webkit : true;
+$support-opera  : false;
+
+$set_prefix: -webkit-, -moz-, -ms-, '';
+
+$tablet: 1310px;
+$sp: 768px;
+
+$color1: #3f3f3f;
+$color2: #7aaedd;

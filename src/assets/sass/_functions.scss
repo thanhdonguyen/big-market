@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@mixin fs($fontSize, $baseFontSize:10){
+	font-size: #{$fontSize / $baseFontSize}em;
+}
+
+%cf {
+	@if $support-ie6 or $support-ie7 {
+		*zoom: 1;
+	}
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+}
+
+@mixin cf{
+	@if $support-ie6 or $support-ie7 {
+		*zoom: 1;
+	}
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../lib/webfonts/Roboto/Roboto-Regular.ttf);
+}
+
+@mixin tablet{
+	@media screen and (max-width: #{$tablet}){
+		@content;
+	}
+}
+
+@mixin sp{
+	@media screen and (max-width: #{$sp}){
+		@content;
+	}
+}
