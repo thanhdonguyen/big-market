@@ -1,0 +1,33 @@
+/*------------------------------------------------------------
+	c-btn
+------------------------------------------------------------*/
+.c-btn1 {
+	font-size: 14px;
+	color: $color1;
+	font-weight: bold;
+	display: block;
+	border: 2px solid #e8e8e8;
+	margin: 0 10px;
+	padding: 10px 0;
+	transition: all .3s;
+	&:hover {
+		border: 2px solid $color2;
+		transition: all .3s;
+		color: $color2;
+	}
+}
+.c-btn2 {
+	font-size: 14px;
+	color: #fff;
+	background-color: $color1;
+	font-weight: bold;
+	display: block;
+	// border: 2px solid #e8e8e8;
+	margin: 0 10px;
+	padding: 10px 0;
+	transition: all .3s;
+	&:hover {
+		background-color: $color2;
+		transition: all .3s;
+	}
+}
