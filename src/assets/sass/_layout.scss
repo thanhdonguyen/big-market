@@ -20,3 +20,106 @@ body {
 .l-flex-container {
 	display: flex;
 }
+.l-wrapper {
+	background-color: #fbfbfb;
+}
+.l-left-side {
+	width: 23%;
+	h3{
+		font-size: 15px;
+		color: $color1;
+		background-color: #eaeaea;
+		padding: 18px 20px 18px 50px;
+		font-family: 'Helvetica', sans-serif;
+		position: relative;
+		&:after {
+			position: absolute;
+			font-family: 'Font Awesome 5 Free';
+			content: '\f03a';
+			font-size: 14px;
+			font-weight: 900;
+			left: 25px;
+			top: 19px;
+		}
+	}
+
+	&__list{
+		padding-top: 10px;
+		background-color: #fff;
+		border: 1px solid #eaeaea;
+		position: relative;
+	}
+	&__sub {
+		position: absolute;
+		left: 108%;
+		top: 0;
+		width: 517px;
+		background-color: #fff;
+		border-top: 2px solid $color2;
+		border-style: solid;
+	    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	    display: flex;
+	    flex-wrap: wrap;
+	    visibility: hidden;
+	    // opacity: 0;
+		li{
+			border: 0 !important;
+			width: 50%;
+			// padding: 0 20px;
+		}
+		a{
+			font-weight: bold;
+			&:after {
+				content: '' !important;
+			}
+		}
+	}
+
+	.is_subside{
+		&:hover {
+			.l-left-side__sub {
+				visibility: visible;
+			}
+		}
+	}
+	li {
+		border-bottom: 1px solid #e8e8e8;
+		position: relative;
+		&:last-child{
+			border: 0;
+		}
+		&:hover {
+			color: $color2;
+		}
+	}
+	i{
+		position: absolute;
+		font-size: 14px;
+		top: 18px;
+		left: 0;
+	}
+	a{
+		font-size: 14px;
+		color: $color1;
+		display: block;
+		padding: 15px 15px 15px 30px;
+		position: relative;
+		&:hover {
+			color: $color2;
+		}
+		&:after {
+			position: absolute;
+			font-family: 'Font Awesome 5 Free';
+			content: '\f105';
+			font-weight: bold;
+			right: 5px;
+		}
+	}
+
+}
+.l-right-side {
+	width: 23%;
+	// background-color: red;
+}

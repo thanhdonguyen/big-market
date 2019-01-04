@@ -5,7 +5,21 @@
 .header-top {
 	display: flex;
 	// background-color: red;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	// box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	background-color: #fafafa;
+	position: relative;
+	&:after{
+		position: absolute;
+    	content: "";
+    	top: 100%;
+    	margin-top: 0;
+    	left: 0;
+    	right: 0;
+    	height: 20px;
+	    background: url(../img/line-bottom-menu.png) top left repeat-x;
+	    z-index: -1;
+	    opacity: 0.8;
+	}
 	&__logo {
 		width: 23%;
 		padding: 33px 0;
@@ -178,6 +192,7 @@
 				top: -38px;
     			left: 0;
     			// background-color: red;
+    			display: block;
 			}
 		    .cart-null{
 		    	color: #808080;

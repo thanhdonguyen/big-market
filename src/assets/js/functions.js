@@ -26,4 +26,5 @@ $(function(){
       	.hide()
       	.removeClass('is_cartHover');
     });
+    
 })

@@ -30,6 +30,10 @@
   font-family: Roboto;
   src: url(../lib/webfonts/Roboto/Roboto-Regular.ttf);
 }
+@font-face{
+	font-family: Helvetica;
+	src: url(..//lib/webfonts/Helvetica/HelveticaNeue-Light.otf);
+}
 
 @mixin tablet{
 	@media screen and (max-width: #{$tablet}){
