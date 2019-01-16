@@ -26,5 +26,13 @@ $(function(){
       	.hide()
       	.removeClass('is_cartHover');
     });
+
+    // ---------end menu top --------------
+
+    $('#sliderlayer').nivoSlider({
+        effect: 'random',
+        animSpeed: 500,
+        pauseTime: 8000
+    });
     
 })

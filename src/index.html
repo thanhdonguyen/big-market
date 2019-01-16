@@ -7,6 +7,9 @@
 <title></title>
 <link rel="stylesheet" href="assets/lib/css/all.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/nivo-slider.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/lib/css/default/default.css">
 <script src="assets/js/common.js"></script>
 </head>
 <body>
@@ -17,35 +20,52 @@
 
 	<div class="p-top1">
 		<div class="l-container l-flex-container">
-			<div class="l-left-side">
-				<h3>DANH MỤC</h3>
-				<ul class="l-left-side__list">
-					<li class="is_subside">
-						<i class="fa fa-female"></i><a href="" title="">Thời trang</a>
-						<ul class="l-left-side__sub">
-							<li><a href="" title="">ÁO SƠ MI</a></li>
-							<li><a href="" title="">TÚI</a></li>
-							<li><a href="" title="">PHỤ KIỆN</a></li>
-							<li><a href="" title="">ÁO</a></li>
-							<li><a href="" title="">TRANG PHỤC</a></li>
-						</ul>
-					</li>
-					<li><i class="fas fa-utensils"></i><a href="" title="">Thực phẩm</a></li>
-					<li><i class="fa fa-camera"></i><a href="" title="">Điện tử</a></li>
-					<li><i class="fa fa-suitcase"></i><a href="" title="">Nội thất</a></li>
-					<li><i class="far fa-heart"></i><a href="" title="">Nữ trang</a></li>
-					<li><i class="fa fa-heart"></i><a href="" title="">Mỹ phẩm</a></li>
-					<li><i class="fa fa-puzzle-piece"></i><a href="" title="">Quà tặng</a></li>
-				</ul>
-			</div>
+			<!-- @@include /components/left-side.html -->
+
 			<div class="p-top1__content">
+				<div class="content-slide theme-default">
+					<div id="sliderlayer" class="slide-layer">
+		                <a href="">
+		                	<img src="assets/img/slideshow_1.jpg" data-thumb="assets/img/slideshow_1.jpg" alt="" />
+		                </a>
+		                <a href="">
+		                	<img src="assets/img/slideshow_2.jpg" data-thumb="assets/img/slideshow_2.jpg" alt="" />
+		                </a>
+		                <a href="">
+		                	<img src="assets/img/slideshow_3.jpg" data-thumb="assets/img/slideshow_3.jpg" alt="" />
+		                </a>
+					</div>
+				</div>
+				<!-- end content-slide -->
 				
+				<div class="content-bigSale">
+					<div class="slider autoplay">
+						<div class="bigSale-product">
+							<h3>ƯU ĐÃI LỚN</h3>
+							<div class="product-itemt">
+								<div class="product-thumnail">
+									<a href="" title="">
+										<img src="assets/img/products/promotion3.jpg" alt="">
+									</a>
+								</div>
+								<div class="product-content">
+									<h4>Áo thun nữ Belike</h4>
+									<p class="content-price"><span>200.000đ</span>95.200đ</p>
+									<p class="content-des">Trẻ trung và cuốn hút theo phong cách đường phố thu-đông với áo nỉ thêu hình động vật của thương hiệu Asos.- Chất liệu cotton pha- Cổ 3cm- Tay dài, suông- Không lót trong- Màu sắc: XámHướng dẫn sử dụng:- Giặt bằng tay với nhiệt độ không quá 30°C- Không được tẩy- Không được sấy khô- Ủi với nhiệt độ...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<div class="l-right-side">
-				
-			</div>
+			<!-- end p-top1__content -->
+			
+			<!-- @@include /components/right-side.html -->
 		</div>
+		<!-- end l-container -->
 	</div>
+	<!-- end p-top1 -->
 	
 </main>
 

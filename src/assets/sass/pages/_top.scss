@@ -8,5 +8,29 @@
 .p-top1__content {
 	width: 54%;
 	// background-color: yellow;
+	padding: 0 30px;
+	.content-slide{
+		position: relative;
+		z-index: 0;
+	}
+	.nivo-controlNav{
+		position: absolute;
+		bottom: -15px;
+		z-index: 99;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.content-bigSale {
+		.product-thumnail{
+			img{
+				width: 100%;
+			}
+		}
+		.product-itemt{
+			display: flex;
+		}
+	}
 	
 }

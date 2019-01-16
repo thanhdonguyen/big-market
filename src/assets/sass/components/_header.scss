@@ -40,6 +40,7 @@
 		}
 		.is-dropdown {
 			position: relative;
+			z-index: 1;
 		    a:before {
 				position: absolute;
 				font-family: 'Font Awesome 5 Free';
@@ -153,6 +154,7 @@
 		.cart-content{
 			visibility: hidden;
 			position: absolute;
+			z-index: 99;
 			width: 270px;
 			text-align: center;
 		    border-width: 2px 0 0 0;
