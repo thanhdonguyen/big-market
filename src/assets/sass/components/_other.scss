@@ -34,3 +34,139 @@
 		}
 	}
 }
+
+.c-thumnail {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	img{
+		width: 100%;
+	}
+
+	.price-sale {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: #f23434;
+		color: #fff;
+		font-size: 10px;
+		padding: 8px 12px;
+		text-transform: uppercase;
+	}
+}
+.c-effect {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+	.c-effect__button {
+		padding-left: 35%;
+		padding-top: 50%;
+	}
+	.add-cart, .to-detail {
+		position: relative;
+		float: left;
+		border: 2px solid #fff;
+		display: block;
+		width: 30px;
+		height: 30px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		text-align: center;
+		transition: all 0.3s;
+		&:before {
+			position: absolute;
+			// content: '\f07a';
+			font-family: 'Font Awesome 5 Free';
+			font-size: 14px;
+			font-weight: bold;
+		    color: #fff;
+		    left: 0;
+		    right: 0;
+		    top: 4px;
+		    bottom: 0;
+		    margin: auto;
+		    transition: all 0.3s;
+		}
+		&:hover {
+			border: 2px solid #337ab7;
+			transition: all 0.3s;
+			&:before {
+				color: #337ab7;
+				transition: all 0.3s;
+			}
+			span {
+				visibility: visible;
+				opacity: 1;
+				transform: translateY(0);
+				transition: all 0.3s;
+			}
+		}
+		span{
+			font-size: 12px;
+			color: #000;
+			position: absolute;
+			left: -20px;
+			top: -40px;
+			background-color: #fff;
+			width: 70px;
+			padding: 5px 0;
+			border-radius: 5px;
+			visibility: hidden;
+			opacity: 0;
+			transform: translateY(5px);
+			transition: all 0.3s;
+			       
+			&:before {
+				content: '';
+				width: 0;
+				height: 0;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 8px solid #fff;
+				position: absolute;
+				bottom: -8px;
+				left: 30px;
+			}
+		}
+	}
+	.add-cart {
+		margin-right: 5px;
+		visibility: hidden;
+		opacity: 0;
+		&:before {
+			content: '\f07a';
+		}
+	}
+	.to-detail {
+		visibility: hidden;
+		opacity: 0;
+		&:before {
+			content: '\f037';
+		}
+	}
+}
+
+.c-effect__thumnail:hover{
+	.c-effect {
+		background-color: rgba(0 ,0 ,0 , 0.6);
+		transition: all .5s;
+	}
+	.add-cart {
+		visibility: visible;
+		animation-name: effect-hover;
+		animation-duration: 0.3s;
+		animation-delay:0.3s;
+		animation-fill-mode:forwards;
+	}
+	.to-detail {
+		visibility: visible;
+		animation-name: effect-hover;
+		animation-duration: 0.3s;
+		animation-delay:0.4s;
+		animation-fill-mode:forwards;
+	}
+}

@@ -34,5 +34,13 @@ $(function(){
         animSpeed: 500,
         pauseTime: 8000
     });
+
+    $('.partnerSlider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows:false
+    });
     
 })

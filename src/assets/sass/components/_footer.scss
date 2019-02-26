@@ -1,0 +1,45 @@
+/*------------------------------------------------------------
+	c-footer
+------------------------------------------------------------*/
+.c-footer{
+
+	&__support {
+		background-color: #353535;
+		display: flex;
+		.support-itemt {
+			width: 33%;
+			padding: 40px 0;
+			border-left: 1px solid #4a4a4a;
+			&:first-child{
+				border-left: 0;
+			}
+		}
+		.support-content {
+			display: flex;
+			justify-content: center;
+			.content-icon {
+				padding-right: 17px;
+			}
+			.content-text {
+				text-align: left;
+				padding-left: 17px;
+				border-left: 1px solid #4a4a4a;
+				h4{
+					color: #fff;
+					font-size: 22px;
+					padding-bottom: 5px;
+					font-family: Helvetica;
+				}
+				p {
+					color: #888888;
+					font-size: 13px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+}
+/*------------------------------------------------------------
+	end c-footer
+------------------------------------------------------------*/
