@@ -42,5 +42,12 @@ $(function(){
         autoplaySpeed: 2000,
         arrows:false
     });
+
+    $('#bigSale_slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<span class="prev-sale"><i class="fas fa-angle-left"></i></span>',
+        nextArrow: '<span class="next-sale"><i class="fas fa-angle-right"></i></span>'
+    });
     
 })

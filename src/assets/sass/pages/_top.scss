@@ -24,6 +24,34 @@
 
 	.content-bigSale {
 		padding-top: 30px;
+		position: relative;
+		.slick-arrow  {
+			display: block;
+			width: 30px;
+			height: 30px;
+			border: 2px solid #e8e8e8;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 20px;
+			position: absolute;
+			color: #3f3f3f;
+			top: -45px;
+			z-index: 10;
+			background-color: #fff;
+			&:hover {
+			    color: #7aaedd;
+			    border-color: #7aaedd;
+			    transition: all 0.3s;
+			}
+		}
+		.prev-sale {
+			left: 0px;
+		}
+		.next-sale {
+			right: 0px;
+		}
+
 		.bigSale-product{
 			background-color: #fff;
 			border: 1px solid #eaeaea;
@@ -59,7 +87,7 @@
 			text-align: center;
 		}
 		.product-content {
-			position: relative;
+			// position: relative;
 			width: 55%;
 			padding-bottom: 70px;
 			h4{
