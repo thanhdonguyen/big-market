@@ -260,3 +260,41 @@
 	}
 
 }
+.header-top.is_sticky {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	// transform: translateY(-70px);
+	transition: all 0.5s;
+	animation-name: navup;
+    animation-duration: 1s;
+	.header-top__logo{
+		padding: 10px 0;
+	}
+	.header-top__nav{
+		a{
+			padding: 20px 17px;
+			&:before {
+				top: 27%;
+			}
+		}
+	}
+	.header-top__cart {
+		padding: 10px 0 10px 4%;
+	}
+}
+@-webkit-keyframes navup {
+    // 0%   {left:0px; top:0px;}
+    0%  {left:0px; top:-90px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes navup {
+    // 0%   {left:0px; top:0px;}
+    0%  {left:0px; top:-90px;}
+    100% {left:0px; top:0px;}
+}
