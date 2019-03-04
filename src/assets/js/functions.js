@@ -54,23 +54,26 @@ $(function(){
     $(window).scroll(function () {
         // var widthDevice = $(window).width();
         if ($(window).scrollTop() > $('.header-top').height()) {
-            var scrollTopNow = $(this).scrollTop();
-            var $pageheader = $('.header-top');
-            // Reveal sticky nav on scroll-up
-            if(scrollTopNow > 100 && scrollTopNow > scrollTopLast) {
-                //Scroll down
-                $pageheader.removeClass('is_sticky');
-            } else if(scrollTopNow < scrollTopLast) {
-                //Scroll up
-                $pageheader.addClass('is_sticky');
-            }
-            scrollTopLast = scrollTopNow;
-            // $('.is_sticky').css('transform','translateY(0)')
+            $('.header-top').addClass('is_sticky');
+            $('body').css('padding-top','110px');
         }else{
             $('.header-top').removeClass('is_sticky');
+            $('body').css('padding-top','0');
         }
 
-       
+        var scrollTopNow = $(this).scrollTop();
+        var $pageheader = $('.header-top');
+        // Reveal sticky nav on scroll-up
+        if(scrollTopNow > 700 && scrollTopNow > scrollTopLast) {
+            //Scroll down
+            $pageheader.addClass('is_sticky_hide');
+        } else if(scrollTopNow < scrollTopLast) {
+            //Scroll up
+            $pageheader.removeClass('is_sticky_hide');
+        }
+        scrollTopLast = scrollTopNow;
     });
+
+    // ----------------------------------
 
 })

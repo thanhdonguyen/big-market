@@ -13,13 +13,19 @@ body {
 	margin: 0 auto;
 	width: 1210px;
 	text-align: left;
-	@include tablet {
+	// @include tablet {
+	// 	width: 94%;
+	// }
+	@media screen and (max-width: 1210px){
 		width: 94%;
 	}
 }
 
 .l-flex-container {
 	display: flex;
+	@include tablet {
+		flex-wrap: wrap;
+	}
 }
 .l-wrapper {
 	background-color: #fbfbfb;
@@ -28,6 +34,10 @@ body {
 	width: 23%;
 	position: relative;
 	z-index: 2;
+	@include tablet {
+		width: 100%;
+		padding-bottom: 30px;
+	}
 	h3{
 		font-size: 15px;
 		color: $color1;
@@ -132,6 +142,11 @@ body {
 
 	&__image {
 		margin-top: 30px;
+		@include tablet {
+			width: 50%;
+			margin: 0 auto;
+			margin-top: 30px;
+		}
 		img {
 			width: 100%;
 		}
@@ -142,6 +157,9 @@ body {
 	width: 23%;
 	position: relative;
 	z-index: 0;
+	@include tablet {
+		width: 100%;
+	}
 	&__promotion{
 		width: 90%;
 		background-color: #fff;
@@ -179,6 +197,9 @@ body {
 		padding: 20px 0;
 		.list-thumnail{
 			width: 30%;
+			@include tablet {
+				width: 10%;
+			}
 			a{
 				display: block;
 				width: 100%;

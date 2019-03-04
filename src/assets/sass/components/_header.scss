@@ -4,10 +4,9 @@
 
 .header-top {
 	display: flex;
-	// background-color: red;
-	// box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	background-color: #fafafa;
 	position: relative;
+	
 	&:after{
 		position: absolute;
     	content: "";
@@ -23,6 +22,11 @@
 	&__logo {
 		width: 23%;
 		padding: 33px 0;
+		@include tablet {
+			width: 100%;
+			text-align: center;
+			padding: 15px 0;
+		}
 	}
 
 	&__nav {
@@ -31,12 +35,19 @@
 		justify-content: flex-end;
 		line-height: 1.8;
 		font-size: 14px;
+		@include tablet {
+			width: 80%;
+			justify-content: flex-start;
+		}
 		a{
 			color: $color1;
 			text-decoration: none;
 			font-weight: bold;
 			display: block;
 			padding: 45px 17px;
+			@include tablet {
+				padding: 25px 17px;
+			}
 		}
 		.is-dropdown {
 			position: relative;
@@ -50,6 +61,9 @@
 		    	top: 38%;
 		    	font-size: 15px;
 		    	transition: 0.3s all linear;
+		    	@include tablet {
+		    		top: 24px;
+		    	}
 		    }
 		    &:hover a:before{
 		    	transform: rotate(180deg);
@@ -100,6 +114,9 @@
 			    margin: 0;
 			    padding: 20px 30px;
 			    width: 230px !important;
+			    @include tablet {
+			    	padding: 10px 30px;
+			    }
 			    &:hover {
 			    	width: 215px !important;
 					padding-left: 45px !important;
@@ -120,6 +137,11 @@
 		padding: 35px 0;
 		padding-left: 4%;
 		position: relative;
+		@include tablet {
+			width: 15%;
+			padding-left: 4%;
+			padding: 10px 0;
+		}
 		.mini-cart {
 			border: 1px solid $color2;
 			color: $color1;
@@ -171,6 +193,10 @@
 		    transform: translateY(20px);
 		    transition: 0.2s all ease-out;
 		    opacity: 0.2;
+		    @include tablet {
+		    	top: 70px;
+				left: -150px;
+		    }
 		    &:after {
 		    	position: absolute;
 			    font-family: 'Font Awesome 5 Free';
@@ -285,6 +311,11 @@
 	.header-top__cart {
 		padding: 10px 0 10px 4%;
 	}
+}
+
+.is_sticky_hide {
+	transform: translateY(-70px);
+	transition: all 0.2s;
 }
 @-webkit-keyframes navup {
     // 0%   {left:0px; top:0px;}
