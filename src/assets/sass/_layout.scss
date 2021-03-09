@@ -45,15 +45,15 @@ body {
 		padding: 18px 20px 18px 50px;
 		font-family: 'Helvetica', sans-serif;
 		position: relative;
-		&:after {
-			position: absolute;
-			font-family: 'Font Awesome 5 Free';
-			content: '\f03a';
-			font-size: 14px;
-			font-weight: 900;
-			left: 25px;
-			top: 19px;
-		}
+		// &:after {
+		// 	position: absolute;
+		// 	font-family: 'Font Awesome 5 Free';
+		// 	content: '\f03a';
+		// 	font-size: 14px;
+		// 	font-weight: 900;
+		// 	left: 25px;
+		// 	top: 19px;
+		// }
 	}
 
 	&__list{
